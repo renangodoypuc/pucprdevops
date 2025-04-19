@@ -17,4 +17,8 @@ public class CalculatorService {
         return a/b;
     }
 
+    public Long multiplicar(Long a, Long b) {
+        return a * b;
+    }
+
 }

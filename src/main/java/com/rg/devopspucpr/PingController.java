@@ -31,4 +31,9 @@ public class PingController {
         return calculatorService.dividir(a, b);
     }
 
+    @GetMapping("/multiplicar")
+    public Long multiplicar(@RequestParam Long a, @RequestParam Long b) {
+        return calculatorService.multiplicar(a, b);
+    }
+
 }
