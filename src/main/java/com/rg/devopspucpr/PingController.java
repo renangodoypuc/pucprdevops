@@ -26,4 +26,9 @@ public class PingController {
         return calculatorService.subtrair(a, b);
     }
 
+    @GetMapping("/dividir")
+    public Long dividir(@RequestParam Long a, @RequestParam Long b) {
+        return calculatorService.dividir(a, b);
+    }
+
 }
