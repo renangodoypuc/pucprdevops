@@ -21,4 +21,9 @@ public class PingController {
         return calculatorService.somar(a, b);
     }
 
+    @GetMapping("/subtrair")
+    public Long subtrair(@RequestParam Long a, @RequestParam Long b) {
+        return calculatorService.subtrair(a, b);
+    }
+
 }
