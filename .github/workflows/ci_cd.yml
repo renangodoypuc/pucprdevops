@@ -15,6 +15,15 @@ on:
     branches: [ "main" ]
 
 jobs:
+  discordwebhook:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Discord Webhook
+        uses: johnnyhuy/actions-discord-git-webhook@main
+        with:
+          webhook_url: ${{ secrets.URL_DISCORD_HOOK }}
+
   build:
 
     runs-on: ubuntu-latest
