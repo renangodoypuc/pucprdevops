@@ -10,15 +10,14 @@ public class CalculatorService {
     }
 
     public Long subtrair(Long a, Long b) {
-        return a + b;
+        return a - b;
     }
 
     public Long dividir(Long a, Long b) {
-        return a/b;
+        return a / b;
     }
 
     public Long multiplicar(Long a, Long b) {
         return a * b;
     }
-
 }
